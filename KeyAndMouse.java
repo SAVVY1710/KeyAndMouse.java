@@ -150,6 +150,61 @@ class DrawingPanel extends JPanel implements KeyListener
                 else cartimer.start();
                 carMoveIt = ! carMoveIt;
                 break;
+                case 'i':
+                if (carMoveIt) cartimer.stop();
+                else cartimer.start();
+                carMoveIt = ! carMoveIt;
+                break;
+            case 'o':
+                if (carMoveIt) cartimer.stop();
+                else cartimer.start();
+                carMoveIt = ! carMoveIt;
+                break;
+            case 'u':
+                if (carMoveIt) cartimer.stop();
+                else cartimer.start();
+                carMoveIt = ! carMoveIt;
+                break;
+            case '1':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case '2':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case '3':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case '4':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case '5':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case '6':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case '7':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case '8':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
         }
     } // end keyPressed
 
