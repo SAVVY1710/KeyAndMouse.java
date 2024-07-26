@@ -42,7 +42,6 @@ class DrawingPanel extends JPanel implements KeyListener
     public DrawingPanel() {
         ballX = 200;
         ballY = 10;
-
         carX = 10;
         carY = 400;
         car2X = 10;
@@ -130,4 +129,46 @@ class DrawingPanel extends JPanel implements KeyListener
         g.fillRect(car2X, car2Y-20, 60, 20); // car body
         g.fillRect(car2X+10, car2Y-35, 40, 15); // car top
     } // end paintComponent
+
+    //This method is triggered when the key is typed
+    public void keyTyped(KeyEvent e) {
+        char c = e.getKeyChar();
+        switch (c)
+        {
+            case ' ':
+                if (carMoveIt) cartimer.stop();
+                else cartimer.start();
+                carMoveIt = ! carMoveIt;
+                break;
+            case 'a':
+                if (carMoveIt) cartimer.stop();
+                else cartimer.start();
+                carMoveIt = ! carMoveIt;
+                break;
+            case 'e':
+                if (carMoveIt) cartimer.stop();
+                else cartimer.start();
+                carMoveIt = ! carMoveIt;
+                break;
+        }
+    } // end keyPressed
+
+    //This method is triggered when the key is Pressed
+    public void keyPressed(KeyEvent e)
+    {
+        int keyCode = e.getKeyCode();//up is 38
+        if(keyCode == 16) ballcolor++;
+        if(keyCode == 38) carspeed++;
+        if(keyCode == 40 && carspeed>=2) carspeed--;
+        if(keyCode == 39) ballspeed++;
+        if(keyCode == 37 && ballspeed>=2) ballspeed--;
+
+
+    }
+
+    //This method is triggered when the key is Released
+    public void keyReleased(KeyEvent e)
+    {
+
+    }
 }
