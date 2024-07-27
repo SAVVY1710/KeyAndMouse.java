@@ -205,6 +205,51 @@ class DrawingPanel extends JPanel implements KeyListener
                 else balltimer.start();
                 ballMoveIt = ! ballMoveIt;
                 break;
+            case '9':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case '0':
+                if (ballMoveIt) balltimer.stop();
+                else balltimer.start();
+                ballMoveIt = ! ballMoveIt;
+                break;
+            case 'z':
+                if (car2MoveIt) car2timer.stop();
+                else car2timer.start();
+                car2MoveIt = ! car2MoveIt;
+                break;
+            case 'x':
+                if (car2MoveIt) car2timer.stop();
+                else car2timer.start();
+                car2MoveIt = ! car2MoveIt;
+                break;
+            case 'c':
+                if (car2MoveIt) car2timer.stop();
+                else car2timer.start();
+                car2MoveIt = ! car2MoveIt;
+                break;
+            case 'v':
+                if (car2MoveIt) car2timer.stop();
+                else car2timer.start();
+                car2MoveIt = ! car2MoveIt;
+                break;
+            case 'b':
+                if (car2MoveIt) car2timer.stop();
+                else car2timer.start();
+                car2MoveIt = ! car2MoveIt;
+                break;
+            case 'n':
+                if (car2MoveIt) car2timer.stop();
+                else car2timer.start();
+                car2MoveIt = ! car2MoveIt;
+                break;
+            case 'm':
+                if (car2MoveIt) car2timer.stop();
+                else car2timer.start();
+                car2MoveIt = ! car2MoveIt;
+                break;
         }
     } // end keyPressed
 
